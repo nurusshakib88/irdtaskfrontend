@@ -16,7 +16,7 @@ const DuaPage = () => {
 
   useEffect(() => {
     // Fetch categories from backend when component mounts
-    fetch("http://localhost:3000/category", {
+    fetch("https://irdbackend.fly.dev/category", {
       method: "GET",
       mode: "cors",
       headers: {
@@ -56,7 +56,7 @@ const DuaPage = () => {
 
   // Fetch subcategories based on selected category
   const fetchSubcategories = (categoryId) => {
-    fetch(`http://localhost:3000/subcategory/${categoryId}`, {
+    fetch(`https://irdbackend.fly.dev/subcategory/${categoryId}`, {
       method: "GET",
       mode: "cors",
       headers: {
@@ -79,7 +79,7 @@ const DuaPage = () => {
 
   // Fetch duas based on selected category
   const fetchDuas = (categoryId) => {
-    fetch(`http://localhost:3000/dua/${categoryId}`, {
+    fetch(`https://irdbackend.fly.dev/dua/${categoryId}`, {
       method: "GET",
       mode: "cors",
       headers: {
